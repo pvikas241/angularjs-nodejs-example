@@ -19,9 +19,8 @@ jobs:
     - name: Use Node.js 14.x
       uses: actions/setup-node@v3
       with:
-        node-version: 14.x
-    - run: npm cache clean --force    
+        node-version: 14.x    
     - run: npm install -g @angular/cli
     - run: npm install
-    - run: ng build --if-present
+    - run: ng build 
     - run: npm test
